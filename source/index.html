@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
@@ -111,16 +111,9 @@
                 15 см
               </dd>
             </div>
-            <img src="img/triple-set-small.png" width="260" height="315" alt="Вязанные корзинки">
-            <div class="featured__item">
-              <dt class="featured__price">
-                Цена:
-              </dt>
-              <dd class="featured__description">
-                990 руб.
-              </dd>
-            </div>
           </dl>
+          <img src="img/triple-set-small.png" width="260" height="315" alt="Вязанные корзинки">
+          <p>Цена: 990 руб.</p>
           <a class="featured__order button" href="form.html"></a>
         </div>
       </section>
@@ -257,11 +250,11 @@
         <h2 class="title title--level_2">Добавить в корзину</h2>
         <p>Выберите размер</p>
         <ul class="cart-size__list">
-          <li class="cart-size__item"><input type="radio" name="product_size" value="S" checked>S</li>
-          <li class="cart-size__item"><input type="radio" name="product_size" value="M">M</li>
-          <li class="cart-size__item"><input type="radio" name="product_size" value="L">L</li>
+          <li class="cart-size__item"><label><input type="radio" name="product_size" value="S" checked>S</label></li>
+          <li class="cart-size__item"><label><input type="radio" name="product_size" value="M">M</label></li>
+          <li class="cart-size__item"><label><input type="radio" name="product_size" value="L">L</label></li>
         </ul>
-        <input type="submit" name="" value="Добавить">
+        <input class="button cart-size" type="submit" name="cart_size_submit" value="Добавить">
       </form>
     </section>
   </body>
