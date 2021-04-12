@@ -25,6 +25,14 @@ a:visited {
   font-weight: 700;
 }
 
+.navigation__list,
+.catalog__list,
+.social__list,
+.cart-size__list,
+.item-features__list {
+  list-style: none;
+}
+
 @import "blocks/button.less";
 @import "blocks/navigation.less";
 @import "blocks/catalog.less";
@@ -32,3 +40,41 @@ a:visited {
 @import "blocks/reviews.less";
 @import "blocks/contacts.less";
 @import "blocks/copyright.less";
+
+.form-order__header {
+  width: auto;
+  background-color: #f1f1f1;
+}
+
+.form-order__item {
+  border: none;
+}
+
+.form-order__title {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-order_slogan {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.item-features__legend {
+  line-height: 16px;
+  font-weight: 700;
+  color: @brand-color-2;
+  text-transform: uppercase;
+}
+
+.item-features__label {
+  line-height: 17px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.item-features__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+}
