@@ -66,12 +66,12 @@
           <h3 class="item-features__title visually-hidden">Выберите один из типов товара</h3>
           <ul class="item-features__list">
             <li class="item-features__item">
-              <label class="item-features__label">
-                <input class="product-type__input" type="radio" name="product_type" value="Аксессуар для интерьера" checked>Аксессуар для интерьера</label>
+                <input class="item-features__input" id="product-type__input-1" type="radio" name="product_type" value="Аксессуар для интерьера" checked>
+                <label class="item-features__label" for="product-type__input-1">Аксессуар для интерьера</label>
             </li>
             <li class="item-features__item">
-              <label class="item-features__label">
-                <input class="item-features__input" type="radio" name="product_type" value="Детская игрушка">Детская игрушка</label>
+                <input class="item-features__input" id="product-type__input-2"type="radio" name="product_type" value="Детская игрушка">
+                <label class="item-features__label" for="product-type__input-2">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
@@ -79,30 +79,30 @@
         <fieldset class="form-order__item item-features">
           <legend class="item-features__legend title title--level-3">Цвет</legend>
           <h3 class="item-features__title visually-hidden">Выберите цвета товара (можно несколько)</h3>
-          <ul class="item-features__list">
+          <ul class="item-features__list checkbox">
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Белый" checked>Белый</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Белый" checked><span>Белый</span></label>
             </li>
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Серый" checked>Серый</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Серый" checked><span>Серый</span></label>
             </li>
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Тиффани">Тиффани</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Тиффани"><span>Тиффани</span></label>
             </li>
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Черный">Черный</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Черный"><span>Черный</span></label>
             </li>
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Розовый">Розовый</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Розовый"><span>Розовый</span></label>
             </li>
             <li class="item-features__item">
               <label class="item-features__label">
-                <input class="product-color__input" type="checkbox" name="product_colore" value="Оранжевый">Оранжевый</label>
+                <input class="item-features__input" type="checkbox" name="product_colore" value="Оранжевый"><span>Оранжевый</span></label>
             </li>
           </ul>
         </fieldset>
@@ -130,7 +130,7 @@
           <legend class="item-features__legend title title--level-3">Тел</legend>
           <div class="item-features__list user-phone">
             <label class="item-features__label visually-hidden" for="user_phone">Номер телефона:</label>
-              <input class="item-features__input" type="text" name="user_phone" id="user_phone" placeholder="+7 XXX XXX XX XX*" required>
+              <input class="item-features__input" type="tel" name="user_phone" id="user_phone" placeholder="+7 XXX XXX XX XX*" required>
               <img class="user-phone__icon" src="img/user-phone.svg" width="25" height="24" alt="Значок телефона">
           </div>
         </fieldset>
@@ -139,7 +139,7 @@
           <legend class="user-email__title title title--level-3">E-mail</legend>
           <div class="user-email__item">
             <label class="visually-hidden">Ваш Email:
-              <input class="user-email__input" type="text" name="user_email" placeholder="Ваш Email*" required></label>
+              <input class="user-email__input" type="email" name="user_email" placeholder="Ваш Email*" required></label>
               <img class="user-email__icon" src="img/user-email.svg" width="32" height="21" alt="Значок конверта">
           </div>
         </fieldset>
