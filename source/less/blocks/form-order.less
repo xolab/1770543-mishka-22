@@ -30,8 +30,9 @@
   padding: 0;
 }
 
-@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .item-features__span {
+    appearance: none;
     line-height: 17px;
     color: #000000;
     font-weight: 700;
@@ -46,18 +47,16 @@
   min-width: 260px;
   border: none;
   border-bottom: 2px solid #000000;
-}
-
-.textbox .item-features__input:hover,
-.textbox .item-features__input:active {
   outline: 0;
   outline-offset: 0;
 }
 
 .textbox .item-features__input:hover,
-.textbox .item-features__input:active  {
+.textbox .item-features__input:active {
   border: none;
   border-bottom: 2px solid @brand-color-1;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .item-features__input.tel {
