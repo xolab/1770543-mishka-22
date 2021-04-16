@@ -12,7 +12,7 @@
 
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="/">
         <img class="page-header__logo-image" src="img/logo-small.svg" width="86" height="35" alt="Магазин «Мишка» - милые штуки ручной работы">
       </a>
 
@@ -56,111 +56,111 @@
 
       <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
         <header class="form-order__header">
-          <h2 class="form-order__title title title-2">Вязание на заказ</h2>
+          <h2 class="form-order__title">Вязание на заказ</h2>
         </header>
-        <p class="form-order_slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form-order__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">Тип</legend>
+          <legend class="item-features__legend">Тип</legend>
           <h3 class="item-features__title visually-hidden">Выберите один из типов товара</h3>
           <ul class="item-features__list">
-            <li class="item-features__item radio">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="radio" name="product_type" value="Аксессуар для интерьера" checked><span class="item-features__span">Аксессуар для интерьера</span>
+                <input class="item-features__input--radio" type="radio" name="product_type" value="Аксессуар для интерьера" checked><span class="item-features__text">Аксессуар для интерьера</span>
               </label>
             </li>
-            <li class="item-features__item radio">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="radio" name="product_type" value="Детская игрушка"><span class="item-features__span">Детская игрушка</span>
+                <input class="item-features__input--radio" type="radio" name="product_type" value="Детская игрушка"><span class="item-features__text">Детская игрушка</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">Цвет</legend>
+          <legend class="item-features__legend">Цвет</legend>
           <h3 class="item-features__title visually-hidden">Выберите цвета товара (можно несколько)</h3>
           <ul class="item-features__list">
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Белый" checked><span class="item-features__span">Белый</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Белый" checked><span class="item-features__text">Белый</span></label>
             </li>
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Серый" checked><span class="item-features__span">Серый</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Серый" checked><span class="item-features__text">Серый</span></label>
             </li>
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Тиффани"><span class="item-features__span">«Тиффани»</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Тиффани"><span class="item-features__text">«Тиффани»</span></label>
             </li>
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Черный"><span class="item-features__span">Черный</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Черный"><span class="item-features__text">Черный</span></label>
             </li>
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Розовый"><span class="item-features__span">Розовый</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Розовый"><span class="item-features__text">Розовый</span></label>
             </li>
-            <li class="item-features__item checkbox">
+            <li class="item-features__item">
               <label class="item-features__label">
-                <input class="item-features__input" type="checkbox" name="product_colore" value="Оранжевый"><span class="item-features__span">Оранжевый</span></label>
+                <input class="item-features__input--checkbox" type="checkbox" name="product_colore" value="Оранжевый"><span class="item-features__text">Оранжевый</span></label>
             </li>
           </ul>
         </fieldset>
 
         <h3 class="item-features__title visually-hidden">Укажите ваши данные</h3>
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">ФИО</legend>
+          <legend class="item-features__legend">ФИО</legend>
           <ul class="item-features__list">
-            <li class="item-features__item textbox">
-              <label class="item-features__label"><span class="item-features__span">Имя:</span>
-                <input class="item-features__input" type="text" name="user_name" placeholder="Введите ваше имя*" required></label>
+            <li class="item-features__item">
+              <label class="item-features__label"><span class="item-features__text">Имя:</span>
+                <input class="item-features__input--textbox" type="text" name="user_name" placeholder="Введите ваше имя*" required></label>
             </li>
-            <li class="item-features__item textbox">
-              <label class="item-features__label"><span class="item-features__span">Фамилия:</span>
-                <input class="item-features__input" type="text" name="user_surname" placeholder="Укажите фамилию*" required></label>
+            <li class="item-features__item">
+              <label class="item-features__label"><span class="item-features__text">Фамилия:</span>
+                <input class="item-features__input--textbox" type="text" name="user_surname" placeholder="Укажите фамилию*" required></label>
             </li>
-            <li class="item-features__item textbox">
-              <label class="item-features__label"><span class="item-features__span">Отчество:</span>
-                <input class="item-features__input" type="text" name="user_patronymic" placeholder="Отчество, если желаете"></label>
+            <li class="item-features__item">
+              <label class="item-features__label"><span class="item-features__text">Отчество:</span>
+                <input class="item-features__input--textbox" type="text" name="user_patronymic" placeholder="Отчество, если желаете"></label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">Тел</legend>
-          <div class="item-features__item textbox">
+          <legend class="item-features__legend">Тел</legend>
+          <div class="item-features__item">
             <label class="item-features__label"><span class="visually-hidden">Номер телефона:</span>
-              <input class="item-features__input tel" type="tel" name="user_phone"  placeholder="+7 XXX XXX XX XX*" required>
+              <input class="item-features__input--textbox item-features__input--tel" type="tel" name="user_phone"  placeholder="+7 XXX XXX XX XX*" required>
             </label>
           </div>
         </fieldset>
 
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">E-mail</legend>
-          <div class="item-features__item textbox">
+          <legend class="item-features__legend">E-mail</legend>
+          <div class="item-features__item">
             <label class="item-features__label"><span class="visually-hidden">Ваш Email:</span>
-              <input class="item-features__input email" type="email" name="user_email" placeholder="Ваш Email*" required></label>
+              <input class="item-features__input--textbox item-features__input--email" type="email" name="user_email" placeholder="Ваш Email*" required></label>
           </div>
         </fieldset>
 
         <fieldset class="form-order__item item-features">
-          <legend class="item-features__legend title title-3">Доп</legend>
-          <div class="user-info__item">
+          <legend class="item-features__legend">Доп</legend>
+          <div class="item-features__item">
             <label class="item-features__label"><span class="visually-hidden">Дополнительная информация:</span>
-              <textarea class="item-features__input user-info" name="user_info" rows="8" cols="30"></textarea>
+              <textarea class="item-features__input--user-info" name="user_info" rows="8" cols="28"></textarea>
             </label>
           </div>
         </fieldset>
 
-        <p class="form-order_note">*Поля обязательны для заполнения</p>
+        <p class="form-order__note">*Поля обязательны для заполнения</p>
         <input class="button form-order" type="submit" name="form_order_submit" value="Отправить заказ">
       </form>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#">
+        <a class="page-footer__logo" href="/">
           <img class="page-footer__logo-image" src="img/logo-small.svg" width="86" height="35" alt="Магазин «Мишка» - милые штуки ручной работы">
         </a>
         <div class="page-footer__social">
