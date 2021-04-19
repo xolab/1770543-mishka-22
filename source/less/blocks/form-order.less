@@ -1,0 +1,87 @@
+.form-order__header {
+  background-color: #f1f1f1;
+}
+
+.form-order__item {
+  padding: 10px;
+  border: none;
+}
+
+.form-order__title {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-order__slogan {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.item-features__legend {
+  line-height: 16px;
+  font-weight: 700;
+  color: @brand-color-2;
+  text-transform: uppercase;
+}
+
+.item-features__list {
+  padding: 0;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .item-features__text {
+    appearance: none;
+    line-height: 17px;
+    color: #000000;
+    font-weight: 700;
+  }
+}
+
+.item-features__input--textbox {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  min-height: 52px;
+  min-width: 260px;
+  border: none;
+  border-bottom: 2px solid #444444;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.item-features__input--textbox:hover,
+.item-features__input--textbox:active {
+  border: none;
+  border-bottom: 2px solid @brand-color-1;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.item-features__input--tel {
+  background-image: url("../img/user-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.item-features__input--email {
+  background-image: url("../img/user-email.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.item-features__input--user-info {
+  border: 2px solid #444444;
+}
+
+.item-features__input--user-info:hover,
+.item-features__input--user-info:active,
+.item-features__input--user-info:focus {
+  outline: 0;
+  border: 2px solid @brand-color-1;
+}
+
+.form-order__note {
+  font-size: 14px;
+  line-height: 16px;
+}

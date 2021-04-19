@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   color: #444444;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 a {
@@ -20,9 +21,12 @@ a:visited {
   color: #444444;
 }
 
-.title--level_2 {
-  font-size: 25px;
-  font-weight: 700;
+.navigation__list,
+.catalog__list,
+.social__list,
+.cart-size__list,
+.item-features__list {
+  list-style: none;
 }
 
 @import "blocks/button.less";
@@ -32,3 +36,6 @@ a:visited {
 @import "blocks/reviews.less";
 @import "blocks/contacts.less";
 @import "blocks/copyright.less";
+@import "blocks/radio.less";
+@import "blocks/checkbox.less";
+@import "blocks/form-order.less";
