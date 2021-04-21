@@ -1,5 +1,5 @@
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  .radio .item-features__input {
+  .item-features__input--radio {
     appearance: none;
     display: inline-block;
     position: relative;
@@ -12,19 +12,9 @@
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
-
-    &:not(.switch) {
-      &::after {
-        opacity: var(--o, 0);
-      }
-
-      &:checked {
-        --o: 1;
-      }
-    }
   }
 
-  .radio .item-features__input::after {
+  .item-features__input--radio::after {
     content: "";
     display: block;
     position: absolute;
@@ -35,21 +25,23 @@
     background-color: @brand-color-1;
     border-radius: 50%;
     transform: scale(0.5);
+    opacity: 0;
   }
 
-  .radio .item-features__input:hover {
+  .item-features__input--radio:checked::after {
+    opacity: 1;
+  }
+
+  .item-features__input--radio:hover,
+  .item-features__input--radio:focus {
     border-color: @brand-color-1;
   }
 
-  .radio .item-features__input:focus {
-    box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
-  }
-
-  .radio .item-features__input:active {
+  .item-features__input--radio:active {
     border-color: rgba(0, 0, 0, 0.3);
   }
 
-  .radio .item-features__span {
+  .item-features__text {
     margin-left: 19px;
   }
 }

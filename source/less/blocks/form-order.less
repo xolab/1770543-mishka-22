@@ -1,5 +1,4 @@
 .form-order__header {
-  width: auto;
   background-color: #f1f1f1;
 }
 
@@ -14,7 +13,7 @@
   text-align: center;
 }
 
-.form-order_slogan {
+.form-order__slogan {
   font-size: 13px;
   line-height: 24px;
 }
@@ -31,7 +30,7 @@
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  .item-features__span {
+  .item-features__text {
     appearance: none;
     line-height: 17px;
     color: #000000;
@@ -39,43 +38,50 @@
   }
 }
 
-.textbox .item-features__input {
+.item-features__input--textbox {
   font-size: 19px;
   line-height: 18px;
   font-weight: 400;
   min-height: 52px;
   min-width: 260px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #444444;
   outline: 0;
   outline-offset: 0;
 }
 
-.textbox .item-features__input:hover,
-.textbox .item-features__input:active {
+.item-features__input--textbox:hover,
+.item-features__input--textbox:active {
   border: none;
   border-bottom: 2px solid @brand-color-1;
   outline: 0;
   outline-offset: 0;
 }
 
-.item-features__input.tel {
+.item-features__input--tel {
   background-image: url("../img/user-phone.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.item-features__input.email {
+.item-features__input--email {
   background-image: url("../img/user-email.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.item-features__input.user-info {
-  border: 2px solid #000000;
+.item-features__input--user-info {
+  border: 2px solid #444444;
 }
 
-.form-order_note {
+.item-features__input--user-info:hover,
+.item-features__input--user-info:active,
+.item-features__input--user-info:focus {
+  outline: 0;
+  border: 2px solid @brand-color-1;
+}
+
+.form-order__note {
   font-size: 14px;
   line-height: 16px;
 }
