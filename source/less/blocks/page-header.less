@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.page-header__logo {
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.flex-container {
+  @media (min-width: @desktop-width) {
+    order: -1;
+  }
+}
+
+.page-header ul {
+  margin:0;
+}
