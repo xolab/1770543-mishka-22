@@ -1,17 +1,117 @@
-.catalog {
-  background-image: url("../img/hero-small.png");
-  background-repeat: no-repeat;
+.catalog__wrapper {
+  text-align: center;
 }
 
-.catalog__slogan {
+.catalog__header {
+  display: flex;
+  height: 177px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.catalog__title {
   font-size: 27px;
   font-weight: 700;
+  margin: auto;
 }
 
-.catalog a {
-  font-size: 19px;
+.catalog__list {
+  padding: 0;
+}
+
+.catalog__list a {
+  color: #000000;
+}
+
+.catalog__item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__item:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product__title:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product__title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product__title,
+.production-process__title {
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
-  background-color: @brand-color-2;
+}
+
+.product__description {
+  font-size: 13px;
+}
+
+.product__price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.product__price:hover {
+  background-image: url("../img/icon-cart-active.svg");
+}
+
+.product,
+.production-process__wrapper {
+  border: 1px solid #ececec;
+}
+
+.production-process__wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.production-process__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.production-process__header {
+  padding-left: 47px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.production-process__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  background-image: url("../img/catalog-video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.production-process__video--button {
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.production-process__video--button:hover {
+  background-color: inherit;
+  border-color: transparent;
+  transform: scale(1.2);
+}
+
+.production-process__video--button:active {
+  background-color: inherit;
+  border-color: transparent;
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.production-process__description {
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
 }
