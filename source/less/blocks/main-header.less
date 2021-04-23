@@ -2,6 +2,7 @@
   background-image: url("../img/hero-small.png");
   height: 373px;
   background-repeat: no-repeat;
+  background-color: @lightgrey;
 }
 
 .main-header__slogan {
@@ -14,7 +15,6 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-  background-color: @brand-color-2;
 }
 
 .main-header ul {
@@ -30,14 +30,39 @@
   }
 }
 
+.main-header__legend {
+  display: none;
+  text-align: right;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .main-header__item {
   height: 103px;
-  background-image: url(../img/icon-toy.svg);
+  background-size: 60px;
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #63d1bb;
 
   @media (min-width: @tablet-width) {
+    width: 334px;
     height: 119px;
+    .main-header__legend {
+    display: block;
   }
+}
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
+}
+
+.item-interior {
+  background-image: url(../img/icon-interior.svg);
+  background-color: @brand-color-2;
+}
+
+.item-toy {
+  background-image: url(../img/icon-toy.svg);
+  background-color: @barnd-color-3;
 }
