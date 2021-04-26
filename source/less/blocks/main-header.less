@@ -12,20 +12,19 @@
   text-align: center;
 }
 
-.main-header__item a {
+.main-header__item a,
+.main-header__item a:active,
+.main-header__item a:visited  {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.main-header ul {
-  padding: 0;
-}
-
 .main-header__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction:  row;

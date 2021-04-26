@@ -1,5 +1,21 @@
-.about__list {
+.about {
   color: #000000;
+  font-weight: 700
+}
+
+.about__title {
+  font-size: 25px;
+}
+
+.about__list {
   line-height: 20px;
-  font-weight: 700;
+}
+
+.about__flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }

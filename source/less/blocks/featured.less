@@ -25,3 +25,31 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+.featured__flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+
+    .featured__price {
+      order: 1;
+    }
+  }
+}
+
+.featured__header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    .featured__title {
+      order: 1;
+    }
+  }
+}
