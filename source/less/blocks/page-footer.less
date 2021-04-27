@@ -1,0 +1,25 @@
+.page-footer {
+  background-color: @footer-color;
+}
+
+.page-footer__flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media(min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+}
