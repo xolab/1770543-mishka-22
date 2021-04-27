@@ -14,7 +14,7 @@
 
 .main-header__item a,
 .main-header__item a:active,
-.main-header__item a:visited  {
+.main-header__item a:visited {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -27,13 +27,14 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    flex-direction:  row;
+    flex-direction: row;
   }
 }
 
 .main-header__legend {
   display: none;
   text-align: right;
+
   @media (min-width: @tablet-width) {
     display: block;
   }
@@ -48,6 +49,7 @@
   @media (min-width: @tablet-width) {
     width: 334px;
     height: 119px;
+
     .main-header__legend {
     display: block;
   }

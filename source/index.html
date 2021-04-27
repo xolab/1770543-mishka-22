@@ -194,33 +194,38 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h3 class="contacts__title">Контакты</h3>
-          <dl class="contacts__list">
-            <div class="contacts__item">
-              <dt class="contacts__email">
-                e-mail:
-              </dt>
-              <dd class="contacts__description">
-                <a class="contacts__link" href="mailto:info@mimimishkashop.ru?subject=Письмо%20в%20Магазин%20«Мишка»">info@mimimishkashop.ru</a>
-              </dd>
+          <div class="contacts__flex-container">
+            <div class="contacts__content">
+              <h3 class="contacts__title">Контакты</h3>
+              <dl class="contacts__list">
+                <div class="contacts__item">
+                  <dt class="contacts__email">
+                    e-mail:
+                  </dt>
+                  <dd class="contacts__description">
+                    <a class="contacts__link" href="mailto:info@mimimishkashop.ru?subject=Письмо%20в%20Магазин%20«Мишка»">info@mimimishkashop.ru</a>
+                  </dd>
+                </div>
+                <div class="contacts__item">
+                  <dt class="contacts__address">
+                    адрес:
+                  </dt>
+                  <dd class="contacts__description">
+                    г. Санкт-Петербург<br>
+                    ул. Большая Конюшенная<br>
+                    д. 19/8, офис 101
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="contacts__item">
-              <dt class="contacts__address">
-                адрес:
-              </dt>
-              <dd class="contacts__description">
-                г. Санкт-Петербург<br>
-                ул. Большая Конюшенная<br>
-                д. 19/8, офис 101
-              </dd>
-            </div>
-          </dl>
 
-          <div class="contacts__map">
-            <a class="contacts__map-img" href="#">
-              <img src="img/map-small.png" width="320" height="454" alt="Карта - как нас найти">
-            </a>
+            <div class="contacts__map">
+              <a class="contacts__map-img" href="#">
+                <img src="img/map-small.png" width="320" height="454" alt="Карта - как нас найти">
+              </a>
+            </div>
           </div>
+
           <a class="contacts__write button" href="mailto:info@mimimishkashop.ru?subject=Письмо%20в%20Магазин%20«Мишка»">Напишите нам</a>
         </div>
       </section>
@@ -228,48 +233,63 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo visually-hidden">
-          <a class="page__footer__logo" href="#">
-            <img src="img/logo-small.svg" width="86" height="35" alt="Магазин «Мишка» - милые штуки ручной работы">
+        <div class="page-footer__flex-container">
+          <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="86" height="35" alt="Магазин «Мишка» - милые штуки ручной работы">
           </a>
+          <div class="page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <img class="social__icon" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <img class="social__icon" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Фейсбуке">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <img class="social__icon" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Твитере">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
-        <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <img src="img/icon-fb.svg" width="15" height="28" alt="Мы в Фейсбуке">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <img src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Твитере">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__icon" src="img/htmlacademy.svg" width="86" height="35" alt="HTML Academy">
-          </a>
-        </div>
+
       </div>
     </footer>
 
     <section class="cart-form">
       <form class="cart-size" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="title title--level_2">Добавить в корзину</h2>
-        <p>Выберите размер</p>
+        <h2 class="cart-size__title">Добавить в корзину</h2>
+        <p class="cart-size__legend">Выберите размер</p>
+
         <ul class="cart-size__list">
-          <li class="cart-size__item"><label><input type="radio" name="product_size" value="S" checked>S</label></li>
-          <li class="cart-size__item"><label><input type="radio" name="product_size" value="M">M</label></li>
-          <li class="cart-size__item"><label><input type="radio" name="product_size" value="L">L</label></li>
+          <li class="cart-size__item">
+            <label class="cart-size__label">
+              <input class="cart-size__input--radio" type="radio" name="cart-size" value="S" checked><span class="cart-size__text">S</span>
+            </label>
+          </li>
+          <li class="cart-size__item">
+            <label class="cart-size__label">
+              <input class="cart-size__input--radio" type="radio" name="cart-size" value="M" checked><span class="cart-size__text">M</span>
+            </label>
+          </li>
+          <li class="cart-size__item">
+            <label class="cart-size__label">
+              <input class="cart-size__input--radio" type="radio" name="cart-size" value="L" checked><span class="cart-size__text">L</span>
+            </label>
+          </li>
         </ul>
+
         <input class="button cart-size" type="submit" name="cart_size_submit" value="Добавить">
       </form>
     </section>
