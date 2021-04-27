@@ -1,8 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: @white;
+  color: @black;
   align-items: center;
 
   @media (min-width: @tablet-width) {
@@ -17,6 +17,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    order: -1;
   }
 }
 
@@ -29,11 +30,5 @@
 
   @media (min-width: @desktop-width) {
     order: 2;
-  }
-}
-
-.flex-container {
-  @media (min-width: @desktop-width) {
-    order: -1;
   }
 }

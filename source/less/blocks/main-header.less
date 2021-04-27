@@ -8,7 +8,7 @@
 .main-header__slogan {
   font-size: 27px;
   font-weight: 700;
-  color: #000000;
+  color: @black;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
 }
 
 .main-header__list {
@@ -51,9 +51,9 @@
     height: 119px;
 
     .main-header__legend {
-    display: block;
+      display: block;
+    }
   }
-}
 
   @media (min-width: @desktop-width) {
     width: 525px;
@@ -61,11 +61,11 @@
 }
 
 .item-interior {
-  background-image: url(../img/icon-interior.svg);
+  background-image: url("../img/icon-interior.svg");
   background-color: @brand-color-2;
 }
 
 .item-toy {
-  background-image: url(../img/icon-toy.svg);
-  background-color: @barnd-color-3;
+  background-image: url("../img/icon-toy.svg");
+  background-color: @brand-color-3;
 }
