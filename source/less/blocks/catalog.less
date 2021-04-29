@@ -5,7 +5,7 @@
 .catalog__header {
   display: flex;
   height: 177px;
-  background-color: #f1f1f1;
+  background-color: @footer-color;
   text-align: center;
 }
 
@@ -20,23 +20,23 @@
 }
 
 .catalog__list a {
-  color: #000000;
+  color: @black;
 }
 
 .catalog__item:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px @black-transparent-10;
 }
 
 .catalog__item:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px @black-transparent-10;
 }
 
 .product__title:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: @black-transparent-60;
 }
 
 .product__title:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: @black-transparent-30;
 }
 
 .product__title,
@@ -52,7 +52,7 @@
 .product__price {
   font-size: 15px;
   font-weight: 700;
-  color: #000000;
+  color: @black;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -64,15 +64,15 @@
 
 .product,
 .production-process__wrapper {
-  border: 1px solid #ececec;
+  border: 1px solid @wrapper-border-color;
 }
 
 .production-process__wrapper:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px @black-transparent-10;
 }
 
 .production-process__wrapper:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px @black-transparent-10;
 }
 
 .production-process__header {

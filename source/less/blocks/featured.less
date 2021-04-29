@@ -1,3 +1,9 @@
+.featured__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: @black;
+}
+
 .featured__slogan {
   color: @brand-color-2;
   line-height: 20px;
@@ -18,4 +24,32 @@
 .featured__price {
   line-height: 24px;
   font-weight: 700;
+}
+
+.featured__flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+
+    .featured__price {
+      order: 1;
+    }
+  }
+}
+
+.featured__header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    .featured__title {
+      order: 1;
+    }
+  }
 }

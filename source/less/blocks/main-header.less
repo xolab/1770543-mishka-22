@@ -1,17 +1,71 @@
 .main-header {
   background-image: url("../img/hero-small.png");
+  height: 373px;
   background-repeat: no-repeat;
+  background-color: @lightgrey;
 }
 
 .main-header__slogan {
   font-size: 27px;
   font-weight: 700;
+  color: @black;
+  text-align: center;
 }
 
-.main-header a {
+.main-header__item a,
+.main-header__item a:active,
+.main-header__item a:visited {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
+}
+
+.main-header__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-header__legend {
+  display: none;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.main-header__item {
+  height: 103px;
+  background-size: 60px;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 119px;
+
+    .main-header__legend {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
+}
+
+.item-interior {
+  background-image: url("../img/icon-interior.svg");
   background-color: @brand-color-2;
+}
+
+.item-toy {
+  background-image: url("../img/icon-toy.svg");
+  background-color: @brand-color-3;
 }

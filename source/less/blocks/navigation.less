@@ -1,17 +1,39 @@
-.navigation {
+.navigation__list {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: @white;
 }
 
-.navigation a {
-  color: #000000;
+.navigation__list a {
+  color: @black;
   text-align: center;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+.navigation__list a:hover,
+.navigation__list a:focus {
   opacity: 60%;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation__wrapper {
+    width: 1050px;
+  }
 }
